@@ -7,38 +7,38 @@
         {
             "name": "label1",
             "type": "raw",
-            "default": "input1",
+            "default": "\"input1\"",
             "options": [
                 ""
             ],
-            "value": "input1"
+            "value": "\"input1\""
         },
         {
             "name": "label2",
             "type": "raw",
-            "default": "input2",
+            "default": "\"input2\"",
             "options": [
                 ""
             ],
-            "value": "input2"
+            "value": "\"input2\""
         },
         {
             "name": "label3",
             "type": "raw",
-            "default": "input3",
+            "default": "\"input3\"",
             "options": [
                 ""
             ],
-            "value": "input3"
+            "value": "\"input3\""
         },
         {
             "name": "label4",
             "type": "raw",
-            "default": "input4",
+            "default": "\"input4\"",
             "options": [
                 ""
             ],
-            "value": "input4"
+            "value": "\"input4\""
         }
     ],
     "labels": {

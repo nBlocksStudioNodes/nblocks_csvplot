@@ -1,7 +1,6 @@
 # [CSVplot](https://github.com/nBlocksStudioNodes/csvplot)
 
-Discrete-time Signal Plotter in CSV format: Plots up to 4 signals. The sampling rate is equal to the frame rate (usually 1ms). The Input values, should be synchronized in a per frame basis 
-
+Discrete-time Signal Plotter in CSV format: Plots up to 4 signals. 
 
 ----
 
@@ -14,22 +13,25 @@ width = 450
 
 ----
 
-
-
- 
-
  *  Category: Math
  *  HAL: No Hardware dependencies
- *  Status:  Node in definition 
+ *  Status:  Node is working
+ *  Testing environment: LPC1768, mbed-studio, gcc, mbed-os5.15 baremetal, Arduino serial plotter
+
  *  Author: Nikolaos Chalikias
 
 
+## Implementation details 
+All inputs must be connected to a signal, or there is no output. If needed: connect inputs together. The output is created when 4 input values are aggregated. (the last of the 4 inputs, triggers the output). The first exported (printed) line contains the csv header (column names)  as used in csv files.
+
+
+
 ## Inputs/Outputs
- *  float: Input 1,2,3,4 : Triggers Output
- *  float: Output: String
+ *  float: Input 1 ,2, 3, 4  
+ *  char * (pointer to char array):  Output: String
 
 ## Parameters 
-*  float: label1,2,3,4: Headers for the first CSV line
+*  char * (pointer to char array): label1, 2, 3, 4: Header for the first CSV line
 
 
 

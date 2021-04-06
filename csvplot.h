@@ -14,6 +14,12 @@ public:
     uint32_t x1;
     uint32_t x2;
     uint32_t x3;
+
+        char string_buffer0[32];
+    char string_buffer1[32];
+    char string_buffer2[32];
+    char string_buffer3[32]; 
+    char string_buffer0out[32];     
     
 
 private:	
@@ -22,10 +28,7 @@ private:
     float _ratio3;
     float _ratio4; 
     float _outvalue;
-    char string_buffer0[32];
-    char string_buffer1[32];
-    char string_buffer2[32];
-    char string_buffer3[32];            
+      
 
     const char * _label1;
     const char * _label2;

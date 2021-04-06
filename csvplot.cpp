@@ -11,14 +11,24 @@ nBlock_CSVplot::nBlock_CSVplot(const char * label1, const char * label2, const c
     string_buffer2[0] = 0;
     string_buffer3[0] = 0;
     outputType[0] = OUTPUT_TYPE_STRING;
+
+    //printf("%s, ", _label1);
+    //printf("%s, ", _label2);
+    //printf("%s, ", _label3);
+    //printf("%s\r\n", _label4);
+    //output[0] = (uint32_t)_label4;
+    //x0 = 1;
 }
  
 void nBlock_CSVplot::triggerInput(nBlocks_Message message){
     // Any Input triggers an output regardless of value
     // 
     if (message.inputNumber == 0) { 
-        sprintf(string_buffer0, _label1, message.stringValue);
-        x0 = strlen(string_buffer0);       
+        const char * lab0;
+        lab0 = "%f";
+        sprintf(string_buffer0, lab0, message.stringValue);
+        x0 = strlen(string_buffer0);
+        //printf("string_buffer0 = %s\n", string_buffer0);
     }
     if (message.inputNumber == 1) { 
         sprintf(string_buffer1, _label2, message.stringValue);          
@@ -37,16 +47,12 @@ void nBlock_CSVplot::triggerInput(nBlocks_Message message){
 void nBlock_CSVplot::endFrame(void) {
 	if (x0 > 0) {
 		for (uint32_t i=0; i < x0; i++){
-			string_buffer0[i] = string_buffer0[i];
+            // Output contains pointer to string
+		    output[0] = (uint32_t)(&string_buffer0);
+            available[0] = 1;
+            //printf("string_buffer0=%s\n", string_buffer0);
+            //printf("output[0]=%s\n", output[0]);
+            x0=0;
 		}
-	if (x1 > 0) {
-		for (uint32_t i=x1; i < (x0+x1); i++){
-			string_buffer1[i] = string_buffer0[i];
-		}        
-		// Output contains pointer to string
-		output[0] = (uint32_t)(&string_buffer0);
-	}
-    x0=0; x1=0; x2=0; x3=0;
-    return;	
     }
 }

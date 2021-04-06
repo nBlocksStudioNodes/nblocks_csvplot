@@ -1,0 +1,62 @@
+{
+    "category": "Math",
+    "name": "CSVplot",
+    "inputs": 4,
+    "outputs": 1,
+    "parameters": [
+        {
+            "name": "label1",
+            "type": "raw",
+            "default": "input1",
+            "options": [
+                ""
+            ],
+            "value": "input1"
+        },
+        {
+            "name": "label2",
+            "type": "raw",
+            "default": "input2",
+            "options": [
+                ""
+            ],
+            "value": "input2"
+        },
+        {
+            "name": "label3",
+            "type": "raw",
+            "default": "input3",
+            "options": [
+                ""
+            ],
+            "value": "input3"
+        },
+        {
+            "name": "label4",
+            "type": "raw",
+            "default": "input4",
+            "options": [
+                ""
+            ],
+            "value": "input4"
+        }
+    ],
+    "labels": {
+        "input": [],
+        "output": []
+    },
+    "schematic_pins": {
+        "inputs": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "outputs": [
+            5
+        ]
+    },
+    "repository": "https://github.com/nBlocksStudioNodes/csvplot",
+    "revision": ""
+}
+                

@@ -10,26 +10,14 @@ public:
     void triggerInput(nBlocks_Message message);
 	void endFrame(void);
     uint32_t newValueFLAG;
-    uint32_t x0;
-    uint32_t x1;
-    uint32_t x2;
-    uint32_t x3;
+    uint32_t FLAGS;
 
-        char string_buffer0[32];
-    char string_buffer1[32];
-    char string_buffer2[32];
-    char string_buffer3[32]; 
-    char string_buffer0out[32];     
+    char stringBuf[64];
+    float in[4];
+    
     
 
-private:	
-    float _ratio1;
-    float _ratio2;
-    float _ratio3;
-    float _ratio4; 
-    float _outvalue;
-      
-
+private:	   
     const char * _label1;
     const char * _label2;
     const char * _label3;

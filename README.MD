@@ -1,4 +1,7 @@
 # [CSVplot](https://github.com/nBlocksStudioNodes/csvplot)
+[![](https://img.shields.io/badge/nBlocksStudioNodes-CSVplot-802000.svg)](https://github.com/nBlocksStudioNodes/nblocks_csvplot)
+[![](https://img.shields.io/badge/nBlocksStudioApps-42D__KalmanSimple__test__SCH-802000.svg?logo=telegram)](https://github.com/nBlocksStudioApps/42D_KalmanSimple_test_SCH)
+[![](https://img.shields.io/badge/nBlocksStudioApps-42D__KalmanSimple__test__FW-802000.svg?logo=telegram)](https://github.com/nBlocksStudioApps/42D_KalmanSimple_test_FIRMWARE)
 
 Discrete-time Signal Plotter in CSV format: Plots up to 4 signals. 
 

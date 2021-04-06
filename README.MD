@@ -34,10 +34,4 @@ width = 450
 
 
 ## Example:
-```
-[Ticker]-->[NoiseSource]-->(1)[SignalMixer]-->[StringFormat]-->[StringSerial]
-          -->[ADC]--------->(2)[SignalMixer]
-                                   -->(3)[SignalMixer]
-                                   -->(4)[SignalMixer]
-
-```
+[42D_KalmanSimple_test](https://github.com/nBlocksStudioApps/42D_KalmanSimple_test_FIRMWARE)
